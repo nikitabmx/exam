@@ -38,8 +38,8 @@ export default {
 			type: String,
 		},
 		order: {
-			type: String || undefined,
 			required: false,
+			type: [String, Number, undefined],
 		},
 		amount: {
 			required: true,
@@ -78,7 +78,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style scoped lang="css">
 input {
 	border: 0;
 	margin: 0;

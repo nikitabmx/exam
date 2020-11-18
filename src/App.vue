@@ -42,11 +42,11 @@ export default {
 		},
 		prepareDataList(dataList) {
 			const arr = [];
-			
+
 			const sorted = dataList.sort((a, b) =>
 				moment(a.created_at).isAfter(b.created_at) ? -1 : 1,
 			);
-			
+
 			sorted.forEach((el, i) => {
 				const currentDay = moment()
 					.startOf('day')
